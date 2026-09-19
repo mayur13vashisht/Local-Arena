@@ -9,6 +9,7 @@ import { Admin } from "./app/pages/Admin";
 import { Inbox } from "./app/pages/Inbox";
 import { PublicProfile } from "./app/pages/PublicProfile";
 import { GameProfile } from "./app/pages/GameProfile";
+import { NearbyArenas } from "./app/pages/NearbyArenas";
 // git check
   
 
@@ -20,6 +21,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="tournaments" element={<Tournaments />} />
           <Route path="host" element={<HostTournament />} />
+          <Route path="arenas" element={<NearbyArenas />} />
           <Route path="profile" element={<Profile />} /> {/* 2. Add this route */}
           <Route path="/tournaments/:id" element={<TournamentDetails />} />
           <Route path="/admin" element={<Admin />} />

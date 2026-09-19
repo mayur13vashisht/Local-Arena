@@ -1,5 +1,5 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
-import { Gamepad2, Trophy, PlusCircle, Menu, X, LogIn, LogOut, User as UserIcon, Users } from "lucide-react";
+import { Gamepad2, Trophy, PlusCircle, Menu, X, LogIn, LogOut, User as UserIcon, Users, MapPin } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "./context/AuthContext";
@@ -14,6 +14,7 @@ export function Layout() {
   const navLinks = [
     { to: "/", label: "Home", icon: <Gamepad2 className="w-5 h-5 mr-2" /> },
     { to: "/tournaments", label: "Tournaments", icon: <Trophy className="w-5 h-5 mr-2" /> },
+    { to: "/arenas", label: "Arenas", icon: <MapPin className="w-5 h-5 mr-2" /> },
     { to: "/host", label: "Host", icon: <PlusCircle className="w-5 h-5 mr-2" /> },
   ];
 
